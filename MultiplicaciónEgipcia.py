@@ -1,5 +1,6 @@
 
 
+#coding=utf-8
 def multiplicacionEgipcia(in_multiplicando,in_multiplicador):
     x = 1; suma = 0; num = 0 
     #Listas vacías 
@@ -19,7 +20,7 @@ def multiplicacionEgipcia(in_multiplicando,in_multiplicador):
     
     #Recorriendo ambas listas (multiplicando y multiplicador)
     for multiplicando,multiplicador in zip(valores_multiplicando,valores_multiplicador):
-        print(f"[{multiplicando}] [{multiplicador}]")
+        #print(f"[{multiplicando}] [{multiplicador}]")
         if multiplicador + num <= in_multiplicador: #Evalúa si el valor de multiplicador + num es <= al input_multiplicador
             valores_finales.append(multiplicando)#Añadiendo a la lista los valores del multiplicando que cumplen con dicha condición
             num += multiplicador #sumando el valor del multplicador a la variable num
@@ -33,6 +34,7 @@ in_multiplicando = int(input("Multiplicando: "))
 in_multiplicador = int(input("Multiplicador: "))
 
 mult = multiplicacionEgipcia(in_multiplicando,in_multiplicador)
-print(f"{in_multiplicando} x {in_multiplicador} = {mult}")
+print("{} * {} = {} ".format(in_multiplicando,in_multiplicador,mult))
+#print(f"{in_multiplicando} x {in_multiplicador} = {mult}")
     
     
