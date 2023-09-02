@@ -1,7 +1,4 @@
-'''
-CONJETURA DE COLLATZ
-'''
-
+#coding=utf-8
 def conjeturaCollatz(numero):
     
     if numero % 2 == 0: 
