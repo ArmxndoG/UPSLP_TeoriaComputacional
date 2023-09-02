@@ -1,3 +1,4 @@
+#coding=utf-8
 def multiplicacionRusa(in_multiplicando,in_multiplicador):
     x = 1; suma = 0; 
     valores_multiplicando = [];valores_multiplicador = []; #listas vacías 
@@ -21,4 +22,5 @@ in_multiplicando = int(input("Multiplicando: "))
 in_multiplicador = int(input("Multiplicador: "))
 
 mult = multiplicacionRusa(in_multiplicando,in_multiplicador)
-print(f"{in_multiplicando} x {in_multiplicador} = {mult}")
+print("{} * {} = {} ".format(in_multiplicando,in_multiplicador,mult))
+#print(f"{in_multiplicando} x {in_multiplicador} = {mult}")
